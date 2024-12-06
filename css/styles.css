@@ -1,3 +1,4 @@
+/* minimal CSS reset */
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +28,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    
+/* link hover */
+a:hover {    
     color: #d5d5d7;
 }
 
@@ -79,6 +80,7 @@ nav li a {
     text-decoration: none;
 }
 
+/* menu needs different hover effect */
 nav li a:hover {
     background-color: #d0604c;
 }
@@ -108,23 +110,33 @@ article {
     padding-right: .3rem;
 }
 
-#hero > article {
+/* effect articles to emphasize content*/
+article:hover {
+    translate: 0px 0px 50px;
+    scale: 1.01;
+    webkit-box-shadow: 2px 16px 38px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 16px 38px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 16px 38px -7px rgba(0,0,0,0.75);
+    transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+#hero article {
     background-image: url('/pics/studio_hero.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
 }
 
-#hero > article > div {
+#hero article div {
     padding: .6rem .8rem;
     background-color: rgba(0, 0, 0, .5);
 }
 
-#hero > article > div > h1, #hero > article > p {
+#hero h1, #hero p {
     text-shadow: 2px 2px 4px #000;
 }
 
-#hero > article > div > p {
+#hero p {
     font-size:larger;
 }
 
@@ -138,7 +150,7 @@ article {
     font-size: medium;
 }
 
-#articles > article {
+#articles article {
     padding: 1rem;
 }
 
@@ -148,7 +160,7 @@ article {
     margin-bottom: 2rem;
 }
 
-.image-container > img {
+.image-container img {
     display: block;
     width: 100%;
     border-radius: 5px;
@@ -166,7 +178,7 @@ footer div {
     margin: 0.4rem;
 }
 
-footer > div > img {
+footer img {
     display: flex;
     max-height: 2rem;
 }
