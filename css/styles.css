@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C0C0C0;
+    color:#d5d5d7;
+    font-family: 'Noto Sans', serif;
+}
+
+h1 {
+    margin-bottom: .6rem;
+    font-size: xx-large;
+    color: #d0604c;
+}
+
+h2 {
+    margin-bottom: .4rem;
+    font-size: x-large;
+    color: #d0604c;
+}
+
+header, nav, main, footer {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-bottom: 2rem;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #475251;
+}
+
+header > img { 
+    max-height: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #475251;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav > ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-columns: min-content;
+    column-gap: 1rem;
+    justify-content: center;
+    background-color: #475251;
+    border-radius: 0px 0px 5px 5px;
+    padding: .6rem 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    font-size: 1.2rem;
+    color: #f4e7b2;
+    text-decoration: none;
+}
+
+nav li a.active{
+    color:#d0604c
+}
+
+article, footer {
+    border-radius: .3rem;
+    background-color: #524947;
+}
+
+main + section {
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+}
+
+article {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+#hero > article {
+    background-image: url('/pics/studio_hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#hero > article > div {
+    padding: .6rem .8rem;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#hero > article > div > h1, #hero > article > p {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#hero > article > div > p {
+    font-size:larger;
+}
+
+#articles {
+    max-width: 80vW;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    justify-content: center;
+    font-size: medium;
+}
+
+#articles > article {
+    padding: 1rem;
+}
+
+.image-container {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image-container > img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #475251;
+}
+
+footer div {
+    margin: 0.4rem;
+}
+
+footer > div > img {
+    display: flex;
+    max-height: 2rem;
+}
