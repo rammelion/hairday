@@ -22,6 +22,16 @@ h2 {
     color: #d0604c;
 }
 
+a {
+    color: #d0604c;
+    text-decoration: none;
+}
+
+a:hover {
+    
+    color: #d5d5d7;
+}
+
 header, nav, main, footer {
     max-width: 80vw;
     margin-left: auto;
@@ -67,6 +77,10 @@ nav li a {
     font-size: 1.2rem;
     color: #f4e7b2;
     text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #d0604c;
 }
 
 nav li a.active{
