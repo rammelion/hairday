@@ -105,11 +105,6 @@ section {
     
 }
 
-article {
-    padding-left: .3rem;
-    padding-right: .3rem;
-}
-
 /* effect articles to emphasize content*/
 article:hover {
     translate: 0px 0px 50px;
