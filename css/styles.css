@@ -193,6 +193,9 @@ footer img {
 
 /* mobile changes */
 @media only screen and (max-width: 768px) {
+    body {
+        background-color: #524947;
+    }
     #articles {
         grid-template-columns: auto;
         max-width: 100vw;
